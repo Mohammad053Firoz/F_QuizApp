@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h1>Quiz App</h1>
+      <div id="timer" class="timer"></div>
+      <form id="quizForm">
+        <div class="question">
+          <h3>1. HTML is considered as ______ ? </h3>
+          <div class="options">
+            <label><input type="radio" name="q1" value="Programming Language" /> Programming language</label>
+            <label
+              ><input type="radio" name="q1" value="OOP language" />OOP language</label
+            >
+            <label
+              ><input type="radio" name="q1" value="High level language"/> High level language</label
+            >
+            <label
+              ><input type="radio" name="q1" value="Hyper Language" />Hyper language</label
+            >
+          </div>
+        </div>
+        <div class="question">
+          <h3>2.  If we want to set the style for just one element, which css selector will we use?</h3>
+          <div class="options">
+            <label><input type="radio" name="q2" value="id" /> id</label>
+            <label><input type="radio" name="q2" value="text" /> text</label>
+            <label><input type="radio" name="q2" value="class" /> class</label>
+            <label><input type="radio" name="q2" value="name" /> name</label>
+          </div>
+        </div>
+        <div class="question">
+          <h3>3. Which language is used for styling a webpage?</h3>
+          <div class="options">
+            <label><input type="radio" name="q3" value="CSS" /> CSS</label>
+            <label
+              ><input type="radio" name="q3" value="JavaScript" />
+              JavaScript</label
+            >
+            <label><input type="radio" name="q3" value="React" /> React</label>
+          </div>
+        </div>
+        <div class="question">
+          <h3>3. Who is the main author of the HTML?</h3>
+          <div class="options">
+            <label
+              ><input
+                type="radio"
+                name="q4"
+                value="Brendan Eich"
+              />
+              Brendan Eich</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q4"
+                value="Tim Berners-Lee"
+              />
+              Tim Berners-Lee</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q4"
+                value="Web developer"
+              />
+              Web developer</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="q4"
+                value="Google Inc"
+              />
+              Google Inc</label
+            >
+          </div>
+        </div>
+        
+        <div class="question">
+          <h3>5. Which programming language is used for web development?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q5" value="Python" /> Python</label
+            >
+            <label
+              ><input type="radio" name="q5" value="JavaScript" />
+              JavaScript</label
+            >
+            <label><input type="radio" name="q5" value="C++" /> C++</label>
+          </div>
+        </div>
+        <div class="buttons">
+          <button type="button" class="submit" onclick="submitQuiz()">
+            Submit
+          </button>
+          <button type="reset" class="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span id="closePopup" class="close">&times;</span>
+        <div id="popupIcon" class="popup-icon"></div>
+        <h2 id="popupTitle">Quiz Result</h2>
+        <p id="popupMessage"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
